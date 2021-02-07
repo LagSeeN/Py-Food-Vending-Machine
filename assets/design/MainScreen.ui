@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>Main Screen - Food Vending Machine</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../image/icon/icon.qrc">
+    <normaloff>:/icon/vending-machine.png</normaloff>:/icon/vending-machine.png</iconset>
+  </property>
   <widget class="QLabel" name="lblHeader">
    <property name="geometry">
     <rect>
@@ -323,6 +327,8 @@
   <zorder>lblHeader</zorder>
   <zorder>lblTimeClock</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="../image/icon/icon.qrc"/>
+ </resources>
  <connections/>
 </ui>
