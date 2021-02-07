@@ -13,7 +13,7 @@ import InputCoin
 
 
 class TimeClock(QThread):
-    update_timeclock = pyqtSignal(str)
+    update_time_clock = pyqtSignal(str)
 
     def __init__(self, parent=None):
         super(TimeClock, self).__init__(parent)
@@ -22,35 +22,35 @@ class TimeClock(QThread):
         while True:
             sleep(1)
             time = QtCore.QTime.currentTime()
-            self.update_timeclock.emit(time.toString('hh:mm:ss'))
+            self.update_time_clock.emit(time.toString('hh:mm:ss'))
 
 
-class getFood(QThread):
-    get_food = pyqtSignal(list, str)
+class GetFood(QThread):
+    get_food = pyqtSignal(dict, str)
 
     def __init__(self, item, parent=None):
-        super(getFood, self).__init__(parent)
+        super(GetFood, self).__init__(parent)
         self.item = item
 
     def run(self):
-        item = mongoDBServer.getFood(self.item)
+        item = mongoDBServer.get_food(self.item)
         self.get_food.emit(item, str(self.item))
 
     def stop(self):
         self.terminate()
 
 
-class loadFoodItem(QThread):
+class LoadFoodItem(QThread):
     load_food = pyqtSignal(int, list, list)
 
     def __init__(self, parent=None):
-        super(loadFoodItem, self).__init__(parent)
+        super(LoadFoodItem, self).__init__(parent)
 
     def run(self):
-        count = mongoDBServer.countData()
-        imageItem = mongoDBServer.getAllImage()
-        _id = mongoDBServer.getAll_Id()
-        self.load_food.emit(count, imageItem, _id)
+        count = mongoDBServer.count_data()
+        image_item = mongoDBServer.get_all_image()
+        _id = mongoDBServer.get_all_ids()
+        self.load_food.emit(count, image_item, _id)
 
     def stop(self):
         self.terminate()
@@ -68,32 +68,32 @@ class MainWindows(QMainWindow, MainScreenUI.Ui_MainForm):
         # Clock
         self.timeThread = TimeClock()
         self.timeThread.start()
-        self.timeThread.update_timeclock.connect(self.showTime)
+        self.timeThread.update_time_clock.connect(self.showtime)
         # Show Item
-        self.loadFoodItemThread = loadFoodItem()
+        self.loadFoodItemThread = LoadFoodItem()
         self.loadFoodItemThread.start()
-        self.loadFoodItemThread.load_food.connect(self.loadFoodItem)
+        self.loadFoodItemThread.load_food.connect(self.load_food_item)
         # Event
-        self.btnPay.clicked.connect(self.showInputCoin)
+        self.btnPay.clicked.connect(self.show_input_coin)
 
-    def showTime(self, val):
+    def showtime(self, val):
         self.lblTimeClock.setText('{}'.format(val))
 
-    def loadFoodItem(self, count, imageItem, _id):
+    def load_food_item(self, count, images, _id):
         row1 = 0
         row2 = 0
         for i in range(count):
             self.foodItem = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
             self.foodItem.setMaximumSize(QtCore.QSize(280, 280))
             self.foodItem.setText("")
-            base64_data = imageItem[i]
+            base64_data = images[i]
             pm = QtGui.QPixmap()
             pm.loadFromData(base64.b64decode(base64_data))
             icon = QtGui.QIcon()
             icon.addPixmap(pm, QtGui.QIcon.Normal, QtGui.QIcon.Off)
             self.foodItem.setIcon(icon)
             self.foodItem.setIconSize(QtCore.QSize(280, 280))
-            self.foodItem.clicked.connect(lambda ch, idItem=_id[i]: self.foodLoadInfomation(idItem))
+            self.foodItem.clicked.connect(lambda ch, idItem=_id[i]: self.food_load_information(idItem))
             self.gridLayout.addWidget(self.foodItem, row1, row2, 1, 1)
             self.listbtn.append(self.foodItem)
             # print("[{} , {} , 1 , 1]".format(row1, row2))
@@ -104,31 +104,33 @@ class MainWindows(QMainWindow, MainScreenUI.Ui_MainForm):
                 row2 += 1
         self.loadFoodItemThread.stop()
 
-    def foodLoadInfomation(self, idItem):
+    def food_load_information(self, item_id):
         # add delay to protect spam click
         self.foodArea.setEnabled(False)
-        self.getFoodThread = getFood(idItem)
+        self.getFoodThread = GetFood(item_id)
         self.getFoodThread.start()
-        self.getFoodThread.get_food.connect(self.foodShowInfomation)
+        self.getFoodThread.get_food.connect(self.food_show_information)
 
-    def foodShowInfomation(self, food, idItem):
+    def food_show_information(self, food, item_id):
         self.getFoodThread.stop()
         self.foodArea.setEnabled(True)
-        self.lblName.setText('{}'.format(food[0]['product_name']))
-        if food[0]['stock'] == 0:
+        self.lblName.setText('{}'.format(food['product_name']))
+        if food['stock'] == 0:
             self.btnPay.setEnabled(False)
             self.lblStatus.setText('หมด')
         else:
             self.btnPay.setEnabled(True)
             self.lblStatus.setText('พร้อมจำหน่าย')
-        self.lblStock.setText('{}'.format(food[0]['stock']))
-        self.lblPrice.setText('{}'.format(food[0]['price']))
+        self.lblStock.setText('{0:g}'.format(food['stock']))
+        self.lblPrice.setText('{0:,g}'.format(food['price']))
         self.groupBoxDetailFood.setVisible(True)
-        self.currentSelect = idItem
+        self.currentSelect = item_id
 
-    def showInputCoin(self):
-        self.w = InputCoin.InputCoin(self.currentSelect)
-        self.w.exec_()
+    def show_input_coin(self):
+        input_coin_ui = InputCoin.InputCoin(self.currentSelect, self)
+        input_coin_ui.exec_()
+        self.loadFoodItemThread.start()
+        self.groupBoxDetailFood.setVisible(False)
 
 
 if __name__ == '__main__':

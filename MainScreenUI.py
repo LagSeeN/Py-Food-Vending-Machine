@@ -22,6 +22,9 @@ class Ui_MainForm(object):
         MainForm.setSizePolicy(sizePolicy)
         MainForm.setMinimumSize(QtCore.QSize(1220, 769))
         MainForm.setMaximumSize(QtCore.QSize(1220, 769))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icon/vending-machine.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainForm.setWindowIcon(icon)
         self.lblHeader = QtWidgets.QLabel(MainForm)
         self.lblHeader.setGeometry(QtCore.QRect(20, 10, 711, 91))
         font = QtGui.QFont()
@@ -137,3 +140,4 @@ class Ui_MainForm(object):
         self.label_3.setText(_translate("MainForm", "ราคา"))
         self.lblPrice.setText(_translate("MainForm", "40"))
         self.btnPay.setText(_translate("MainForm", "ชำระเงิน"))
+import icon_rc
