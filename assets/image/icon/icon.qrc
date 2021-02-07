@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>vending-machine.png</file>
+  </qresource>
+</RCC>
