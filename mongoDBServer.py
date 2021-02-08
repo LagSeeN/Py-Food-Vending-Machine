@@ -27,6 +27,16 @@ def get_all_image():
         return image
 
 
+def get_all_status():
+    with pymongo.MongoClient(server) as conn:
+        db = conn.get_database('Food_Vending_Machine')
+        cursor = db['products'].find({}, {'stock': 1})
+        status = []
+        for i in cursor:
+            status.append(i['stock'])
+        return status
+
+
 def get_all_ids():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')

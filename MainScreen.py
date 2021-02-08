@@ -41,7 +41,7 @@ class GetFood(QThread):
 
 
 class LoadFoodItem(QThread):
-    load_food = pyqtSignal(int, list, list)
+    load_food = pyqtSignal(int, list, list, list)
 
     def __init__(self, parent=None):
         super(LoadFoodItem, self).__init__(parent)
@@ -50,7 +50,8 @@ class LoadFoodItem(QThread):
         count = mongoDBServer.count_data()
         image_item = mongoDBServer.get_all_image()
         _id = mongoDBServer.get_all_ids()
-        self.load_food.emit(count, image_item, _id)
+        status = mongoDBServer.get_all_status()
+        self.load_food.emit(count, image_item, status, _id)
 
     def stop(self):
         self.terminate()
@@ -63,7 +64,6 @@ class MainWindows(QMainWindow, MainScreenUI.Ui_MainForm):
         self.btnPay.setEnabled(False)
         self.groupBoxDetailFood.setVisible(False)
         # Var
-        self.listbtn = []
         self.currentSelect = ""
         # Clock
         self.timeThread = TimeClock()
@@ -79,9 +79,14 @@ class MainWindows(QMainWindow, MainScreenUI.Ui_MainForm):
     def showtime(self, val):
         self.lblTimeClock.setText('{}'.format(val))
 
-    def load_food_item(self, count, images, _id):
+    def remove_item_scroll_area(self):
+        for i in range(self.gridLayout.count()):
+            self.gridLayout.itemAt(i).widget().deleteLater()
+
+    def load_food_item(self, count, images, status, _id):
         row1 = 0
         row2 = 0
+        self.remove_item_scroll_area()
         for i in range(count):
             self.foodItem = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
             self.foodItem.setMaximumSize(QtCore.QSize(280, 280))
@@ -93,10 +98,12 @@ class MainWindows(QMainWindow, MainScreenUI.Ui_MainForm):
             icon.addPixmap(pm, QtGui.QIcon.Normal, QtGui.QIcon.Off)
             self.foodItem.setIcon(icon)
             self.foodItem.setIconSize(QtCore.QSize(280, 280))
-            self.foodItem.clicked.connect(lambda ch, idItem=_id[i]: self.food_load_information(idItem))
+            self.foodItem.clicked.connect(lambda ch, item_id=_id[i]: self.food_load_information(item_id))
+            if status[i] == 0:
+                self.foodItem.setEnabled(False)
+            else:
+                self.foodItem.setEnabled(True)
             self.gridLayout.addWidget(self.foodItem, row1, row2, 1, 1)
-            self.listbtn.append(self.foodItem)
-            # print("[{} , {} , 1 , 1]".format(row1, row2))
             if row2 == 2:
                 row2 = 0
                 row1 += 1
