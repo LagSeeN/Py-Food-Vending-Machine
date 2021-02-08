@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Dialog_TimerCook</class>
+ <widget class="QDialog" name="Dialog_TimerCook">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Cook - Food Vending Machine</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../image/icon/icon.qrc">
+    <normaloff>:/icon/vending-machine.png</normaloff>:/icon/vending-machine.png</iconset>
   </property>
   <widget class="QProgressBar" name="progressBar">
    <property name="geometry">
@@ -81,6 +85,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../image/icon/icon.qrc"/>
+ </resources>
  <connections/>
 </ui>

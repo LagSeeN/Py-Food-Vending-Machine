@@ -62,6 +62,18 @@
      <height>591</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>901</width>
+     <height>591</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>901</width>
+     <height>591</height>
+    </size>
+   </property>
    <property name="verticalScrollBarPolicy">
     <enum>Qt::ScrollBarAlwaysOn</enum>
    </property>
