@@ -12,6 +12,7 @@ import InputCoinUI
 
 import CoinEmulator
 import PopupCookFood
+import PopupReceiveCoin
 
 
 class WaitCoinInput(QThread):
@@ -19,7 +20,7 @@ class WaitCoinInput(QThread):
 
     def __init__(self, parent=None):
         super(WaitCoinInput, self).__init__(parent)
-        self.time_left = 60
+        self.time_left = 5
 
     def run(self):
         while True:
@@ -80,6 +81,9 @@ class InputCoin(QDialog, InputCoinUI.Ui_InputDialog):
             self.lbl_time_left.setText('0:{:02d}'.format(time_left))
         self.lbl_input_money.setText('{0:,g}'.format(self.input_money))
         if time_left == 0:
+            if self.input_money != 0:
+                popup_receive_coin = PopupReceiveCoin.PopupReceiveCoin(self.input_money)
+                popup_receive_coin.exec_()
             self.WaitCoinInputIsActive = False
             self.WaitCoinInput.stop()
             self.CoinEmulator.close()
@@ -91,7 +95,7 @@ class InputCoin(QDialog, InputCoinUI.Ui_InputDialog):
             change = 0
             if self.input_money > self.total_price:
                 change = self.input_money - self.total_price
-            popup_cook_food = PopupCookFood.PopupCookFood(change)
+            popup_cook_food = PopupCookFood.PopupCookFood(change, self._id)
             popup_cook_food.exec_()
             self.close()
 
