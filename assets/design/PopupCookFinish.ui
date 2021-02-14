@@ -10,6 +10,18 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Cook - Food Vending Machine</string>
   </property>
@@ -32,7 +44,7 @@
     </font>
    </property>
    <property name="text">
-    <string>กรุณารับอาหาร</string>
+    <string>กรุณารับอาหารและเงินทอน</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
