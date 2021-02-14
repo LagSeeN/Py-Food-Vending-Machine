@@ -88,7 +88,6 @@ def export_log():
         {'food_name': ['count'], 'price': ['sum']}).sort_values(by=[('food_name', 'count'), ('price', 'sum')],
                                                                 ascending=[0, 1])
     filename = 'Food Vending Machine ' + str(datetime.now().year) + '-' + str(datetime.now().month)
-    print(desktop + filename + '.xlsx')
     write_excel = pd.ExcelWriter(desktop + filename + '.xlsx')
     sheet_name = filename
     df_export.to_excel(write_excel, sheet_name, encoding='utf8')
