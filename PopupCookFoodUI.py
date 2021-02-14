@@ -15,6 +15,8 @@ class Ui_Dialog_PopupCookFood(object):
     def setupUi(self, Dialog_PopupCookFood):
         Dialog_PopupCookFood.setObjectName("Dialog_PopupCookFood")
         Dialog_PopupCookFood.resize(400, 300)
+        Dialog_PopupCookFood.setMinimumSize(QtCore.QSize(400, 300))
+        Dialog_PopupCookFood.setMaximumSize(QtCore.QSize(400, 300))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icon/vending-machine.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog_PopupCookFood.setWindowIcon(icon)

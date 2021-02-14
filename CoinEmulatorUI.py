@@ -15,6 +15,8 @@ class Ui_CoinEmulator(object):
     def setupUi(self, CoinEmulator):
         CoinEmulator.setObjectName("CoinEmulator")
         CoinEmulator.resize(371, 238)
+        CoinEmulator.setMinimumSize(QtCore.QSize(371, 238))
+        CoinEmulator.setMaximumSize(QtCore.QSize(371, 238))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icon/vending-machine.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         CoinEmulator.setWindowIcon(icon)

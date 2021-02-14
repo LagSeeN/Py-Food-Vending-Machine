@@ -15,6 +15,8 @@ class Ui_InputDialog(object):
     def setupUi(self, InputDialog):
         InputDialog.setObjectName("InputDialog")
         InputDialog.resize(400, 300)
+        InputDialog.setMinimumSize(QtCore.QSize(400, 300))
+        InputDialog.setMaximumSize(QtCore.QSize(400, 300))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icon/vending-machine.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         InputDialog.setWindowIcon(icon)
