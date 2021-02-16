@@ -20,7 +20,7 @@ class WaitCoinInput(QThread):
 
     def __init__(self, parent=None):
         super(WaitCoinInput, self).__init__(parent)
-        self.time_left = 5
+        self.time_left = 60
 
     def run(self):
         while True:
