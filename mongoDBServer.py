@@ -5,6 +5,7 @@ import os
 
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop\\')
 server = 'mongodb+srv://vending_machine:wYvBQGPZHF6tMGbqHueyZZeWMjcuq47zSA6p9DifL3WeExvSi5RWE4hYuuwAcgG4ZoSNoXyYb37txCESZw6UfffmFrnuRZXP4Rpqd9LfRMEq8K3toKAwsuUcbakHvz58@clustertni.kt6oq.mongodb.net/Food_Vending_Machine?retryWrites=true&w=majority'
+branch = 'Python'
 
 
 def search_data():
@@ -17,14 +18,14 @@ def search_data():
 def count_data():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')
-        found = db['products'].count_documents({})
+        found = db['products'].count_documents({'branch': branch, "is_available": 1})
         return found
 
 
 def get_all_image():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')
-        cursor = db['products'].find({}, {'image': 1})
+        cursor = db['products'].find({'branch': branch, "is_available": 1}, {'image': 1})
         image = []
         for i in cursor:
             image.append(i['image'])
@@ -34,7 +35,7 @@ def get_all_image():
 def get_all_status():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')
-        cursor = db['products'].find({}, {'stock': 1})
+        cursor = db['products'].find({'branch': branch, "is_available": 1}, {'stock': 1})
         status = []
         for i in cursor:
             status.append(i['stock'])
@@ -44,7 +45,7 @@ def get_all_status():
 def get_all_ids():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')
-        cursor = db['products'].find()
+        cursor = db['products'].find({'branch': branch, "is_available": 1})
         _id = []
         for i in cursor:
             _id.append(i['_id'])
@@ -74,13 +75,13 @@ def food_finish(_id, current_food):
         db['products'].update({'_id': _id}, {'$set': {'stock': current_food - 1}})
         db['transaction'].insert_one(
             {'date': datetime.now(), 'food_item': _id, 'food_name': db['products'].find_one(where)['product_name'],
-             'price': db['products'].find_one(where)['price']})
+             'price': db['products'].find_one(where)['price'],'branch': branch})
 
 
 def export_log():
     with pymongo.MongoClient(server) as conn:
         db = conn.get_database('Food_Vending_Machine')
-        cursor = db['transaction'].find({})
+        cursor = db['transaction'].find({'branch': branch})
         df = pd.DataFrame(list(cursor))
     current_date = df['date'].dt.month
     df['Month'] = current_date
