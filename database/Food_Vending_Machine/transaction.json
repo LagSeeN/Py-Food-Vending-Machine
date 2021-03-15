@@ -1,0 +1,768 @@
+{ 
+    "_id" : ObjectId("60387c7ca529aff3e551d4a3"), 
+    "date" : ISODate("2021-02-26T04:43:40.445+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60387c95ab6ed15530e03eff"), 
+    "date" : ISODate("2021-02-26T04:44:05.982+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038b46d335de0ffb6c39f16"), 
+    "date" : ISODate("2021-02-26T08:42:21.736+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038b6ef797a65d931e6791f"), 
+    "date" : ISODate("2021-02-26T08:53:03.764+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038b910411ea4c7fa61f502"), 
+    "date" : ISODate("2021-02-26T09:02:08.647+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038b989db49999e3cc2e06d"), 
+    "date" : ISODate("2021-02-26T09:04:09.938+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038b9caca598158949ae0cb"), 
+    "date" : ISODate("2021-02-26T09:05:14.886+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038ba27e33f78ba4aa53f7c"), 
+    "date" : ISODate("2021-02-26T09:06:47.561+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038ba963d3ec09e2c172728"), 
+    "date" : ISODate("2021-02-26T09:08:38.578+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038bb463443713acab7c55b"), 
+    "date" : ISODate("2021-02-26T09:11:34.672+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038bc6fae78bcd6d9c75cee"), 
+    "date" : ISODate("2021-02-26T09:16:31.029+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cd"), 
+    "food_name" : "ข้าวอบทรงเครื่อง", 
+    "price" : 55.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038bc7b906610c1be14c713"), 
+    "date" : ISODate("2021-02-26T09:16:43.539+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038bc92906610c1be14c714"), 
+    "date" : ISODate("2021-02-26T09:17:06.157+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038bdb30f41b628e50861d1"), 
+    "date" : ISODate("2021-02-26T09:21:55.768+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038be1776524af0f15e5919"), 
+    "date" : ISODate("2021-02-26T09:23:35.135+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6038be3aba0144c96f53ced5"), 
+    "date" : ISODate("2021-02-26T09:24:10.445+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039021e667af57b7360dcf5"), 
+    "date" : ISODate("2021-02-26T14:13:50.329+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603903523c13a8988f13ac03"), 
+    "date" : ISODate("2021-02-26T14:18:58.817+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603906dfbc77e45f0fadaef6"), 
+    "date" : ISODate("2021-02-26T14:34:07.389+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390759d3489c9b98909a46"), 
+    "date" : ISODate("2021-02-26T14:36:09.223+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603907b03945e299f7c8a942"), 
+    "date" : ISODate("2021-02-26T14:37:36.620+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039086d6b78f707420929c6"), 
+    "date" : ISODate("2021-02-26T14:40:45.926+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603908f86b78f707420929c7"), 
+    "date" : ISODate("2021-02-26T14:43:04.228+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390980a83539d598531828"), 
+    "date" : ISODate("2021-02-26T14:45:20.433+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603909fcb763663e76b109e0"), 
+    "date" : ISODate("2021-02-26T14:47:24.454+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390a21520d92881703973b"), 
+    "date" : ISODate("2021-02-26T14:48:01.049+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390a4012358d580af1a2c1"), 
+    "date" : ISODate("2021-02-26T14:48:32.193+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390e865036fe95fb02291d"), 
+    "date" : ISODate("2021-02-26T15:06:46.361+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60390f6c4d2f0878aefcdc26"), 
+    "date" : ISODate("2021-02-26T15:10:36.891+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039140694265740443dd692"), 
+    "date" : ISODate("2021-02-26T15:30:14.821+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60391498e54a825dc523a876"), 
+    "date" : ISODate("2021-02-26T15:32:40.425+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603914c7bc13552028505985"), 
+    "date" : ISODate("2021-02-26T15:33:27.831+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039160c3e57014a16968860"), 
+    "date" : ISODate("2021-02-26T15:38:52.341+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039161c3e57014a16968861"), 
+    "date" : ISODate("2021-02-26T15:39:08.383+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039168e3d3dcbd4be0b3802"), 
+    "date" : ISODate("2021-02-26T15:41:02.820+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039179c7903e1d7e22bce4c"), 
+    "date" : ISODate("2021-02-26T15:45:32.266+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60391d34ad116d2a31099434"), 
+    "date" : ISODate("2021-02-26T16:09:24.698+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039212d222b3d08bad71854"), 
+    "date" : ISODate("2021-02-26T16:26:21.395+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603921a2d44ac41b0ad54fc3"), 
+    "date" : ISODate("2021-02-26T16:28:18.395+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603921b7d44ac41b0ad54fc4"), 
+    "date" : ISODate("2021-02-26T16:28:39.847+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603921c4d44ac41b0ad54fc5"), 
+    "date" : ISODate("2021-02-26T16:28:52.784+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603921e6d44ac41b0ad54fc6"), 
+    "date" : ISODate("2021-02-26T16:29:26.188+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60392238d44ac41b0ad54fc7"), 
+    "date" : ISODate("2021-02-26T16:30:48.999+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039225cd44ac41b0ad54fc8"), 
+    "date" : ISODate("2021-02-26T16:31:24.246+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60392288d44ac41b0ad54fc9"), 
+    "date" : ISODate("2021-02-26T16:32:08.384+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603922b2d44ac41b0ad54fca"), 
+    "date" : ISODate("2021-02-26T16:32:50.949+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cc"), 
+    "food_name" : "ข้าวผัดปลาสลิด", 
+    "price" : 49.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60392306e073398b6743bdc3"), 
+    "date" : ISODate("2021-02-26T16:34:14.427+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039a8af895b14a90f141cc2"), 
+    "date" : ISODate("2021-02-27T02:04:31.989+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039a8bc895b14a90f141cc3"), 
+    "date" : ISODate("2021-02-27T02:04:44.739+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039d09cf0148478469382cc"), 
+    "date" : ISODate("2021-02-27T04:54:52.329+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039d671724d1677871ad8e6"), 
+    "date" : ISODate("2021-02-27T05:19:45.526+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("6039d7f1dd1ac27ca25e95bf"), 
+    "date" : ISODate("2021-02-27T05:26:09.360+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a1179c6325cfb13617906"), 
+    "date" : ISODate("2021-02-27T09:31:37.498+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a1188c6325cfb13617907"), 
+    "date" : ISODate("2021-02-27T09:31:52.595+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a2395ce60f5215ecab774"), 
+    "date" : ISODate("2021-02-27T10:48:53.098+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cd"), 
+    "food_name" : "ข้าวอบทรงเครื่อง", 
+    "price" : 55.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a298d935f818aec4db4cb"), 
+    "date" : ISODate("2021-02-27T11:14:21.036+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a29bb935f818aec4db4cc"), 
+    "date" : ISODate("2021-02-27T11:15:07.764+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a29d3935f818aec4db4cd"), 
+    "date" : ISODate("2021-02-27T11:15:31.072+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a2db084239f5b3a668392"), 
+    "date" : ISODate("2021-02-27T11:32:00.291+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a2e46a90ac7f3a768073e"), 
+    "date" : ISODate("2021-02-27T11:34:30.031+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a3779cc752f3de990d6b3"), 
+    "date" : ISODate("2021-02-27T12:13:45.966+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a37d6a73e5393a807a65b"), 
+    "date" : ISODate("2021-02-27T12:15:18.116+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a3aecf2355b9e9a925928"), 
+    "date" : ISODate("2021-02-27T12:28:28.239+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a4a880a181b7ae4ee416c"), 
+    "date" : ISODate("2021-02-27T13:35:04.348+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a4d4a6b761569a6c1387a"), 
+    "date" : ISODate("2021-02-27T13:46:50.430+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c6"), 
+    "food_name" : "ข้าวญี่ปุ่นผัดกระเทียม", 
+    "price" : 25.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a554bb3388fad36cbee58"), 
+    "date" : ISODate("2021-02-27T14:20:59.484+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a5643a2516efe542d27a3"), 
+    "date" : ISODate("2021-02-27T14:25:07.433+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cc"), 
+    "food_name" : "ข้าวผัดปลาสลิด", 
+    "price" : 49.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a5699dc72d145fa27f745"), 
+    "date" : ISODate("2021-02-27T14:26:33.344+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cc"), 
+    "food_name" : "ข้าวผัดปลาสลิด", 
+    "price" : 49.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a5f46b51f321d45c8e0a4"), 
+    "date" : ISODate("2021-02-27T15:03:34.283+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cc"), 
+    "food_name" : "ข้าวผัดปลาสลิด", 
+    "price" : 49.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a6241384fcb822f3d4c2d"), 
+    "date" : ISODate("2021-02-27T15:16:17.361+0000"), 
+    "food_item" : ObjectId("6020a209ead409145c30c981"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603a69d02d7818006583f70b"), 
+    "date" : ISODate("2021-02-27T15:48:32.970+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603af44f23354b9caac2d8b3"), 
+    "date" : ISODate("2021-02-28T01:39:27.484+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603af4b723354b9caac2d8b4"), 
+    "date" : ISODate("2021-02-28T01:41:11.851+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603af55223354b9caac2d8b5"), 
+    "date" : ISODate("2021-02-28T01:43:46.292+0000"), 
+    "food_item" : ObjectId("601ecbca6a5b001aae4141cb"), 
+    "food_name" : "ข้าวคั่วกลิ้งไก่", 
+    "price" : 45.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603b0641d67b37b3c2254adc"), 
+    "date" : ISODate("2021-02-28T02:56:01.841+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c5"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("603b07a8d67b37b3c2254ade"), 
+    "date" : ISODate("2021-02-28T03:02:00.333+0000"), 
+    "food_item" : ObjectId("603b06e6d67b37b3c2254add"), 
+    "food_name" : "แอมไก่", 
+    "price" : 20.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("60435fbd0520effe688037a9"), 
+    "date" : ISODate("2021-03-06T10:55:57.430+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141ca"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 40.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("604a29daf231d9ef063b5eef"), 
+    "date" : ISODate("2021-03-11T14:31:54.026+0000"), 
+    "food_item" : ObjectId("604a297cf231d9ef063b5eee"), 
+    "food_name" : "แฮมอกไก่ (อกไก่บดขึ้นรูป)", 
+    "price" : 35.0, 
+    "branch" : "Visual Basic"
+}
+{ 
+    "_id" : ObjectId("604ec6d1bec000b9016cbe35"), 
+    "date" : ISODate("2021-03-15T09:30:41.020+0000"), 
+    "food_item" : ObjectId("60141d189320b3b12510a707"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec790fe5ace1301c2bfe9"), 
+    "date" : ISODate("2021-03-15T09:33:52.046+0000"), 
+    "food_item" : ObjectId("60141d179320b3b12510a706"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec886003a6d6389f547bc"), 
+    "date" : ISODate("2021-03-15T09:37:58.245+0000"), 
+    "food_item" : ObjectId("60141d179320b3b12510a706"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec906aecda82175b14d48"), 
+    "date" : ISODate("2021-03-15T09:40:06.776+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec91eac419a7ca90cde91"), 
+    "date" : ISODate("2021-03-15T09:40:30.017+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec9423fe5b83b64d8cb44"), 
+    "date" : ISODate("2021-03-15T09:41:05.905+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec957ebb4316cc70c74d4"), 
+    "date" : ISODate("2021-03-15T09:41:27.779+0000"), 
+    "food_item" : ObjectId("601ecbb86a5b001aae4141c1"), 
+    "food_name" : "ผัดหมี่ซั่วซอสสไตล์ฮ่องกง", 
+    "price" : 55.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ec98a35bf644562b5fe71"), 
+    "date" : ISODate("2021-03-15T09:42:18.421+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604eca1e6fcaae6ab5537ba5"), 
+    "date" : ISODate("2021-03-15T09:44:46.512+0000"), 
+    "food_item" : ObjectId("601ecbb86a5b001aae4141c1"), 
+    "food_name" : "ผัดหมี่ซั่วซอสสไตล์ฮ่องกง", 
+    "price" : 55.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604eca3de87a3e196f44bea8"), 
+    "date" : ISODate("2021-03-15T09:45:17.821+0000"), 
+    "food_item" : ObjectId("601ecbb86a5b001aae4141c1"), 
+    "food_name" : "ผัดหมี่ซั่วซอสสไตล์ฮ่องกง", 
+    "price" : 55.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604eca66000756101df7f8bb"), 
+    "date" : ISODate("2021-03-15T09:45:58.373+0000"), 
+    "food_item" : ObjectId("60141d189320b3b12510a707"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ecb4c40a315ef24d56f12"), 
+    "date" : ISODate("2021-03-15T09:49:48.153+0000"), 
+    "food_item" : ObjectId("601ecbb86a5b001aae4141c1"), 
+    "food_name" : "ผัดหมี่ซั่วซอสสไตล์ฮ่องกง", 
+    "price" : 55.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ecb726ae9d294a0994dd1"), 
+    "date" : ISODate("2021-03-15T09:50:26.483+0000"), 
+    "food_item" : ObjectId("601ecbb86a5b001aae4141c1"), 
+    "food_name" : "ผัดหมี่ซั่วซอสสไตล์ฮ่องกง", 
+    "price" : 55.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ecb82102ba6d25ce5cbeb"), 
+    "date" : ISODate("2021-03-15T09:50:42.260+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ecb94102ba6d25ce5cbf6"), 
+    "date" : ISODate("2021-03-15T09:51:00.084+0000"), 
+    "food_item" : ObjectId("601ecbc86a5b001aae4141c9"), 
+    "food_name" : "ปีกไก่ไข่พะโล้", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ed1058b96f18f714938f8"), 
+    "date" : ISODate("2021-03-15T10:14:13.173+0000"), 
+    "food_item" : ObjectId("60141d179320b3b12510a706"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ed2a0889d9582e9442048"), 
+    "date" : ISODate("2021-03-15T10:21:04.193+0000"), 
+    "food_item" : ObjectId("60141d179320b3b12510a706"), 
+    "food_name" : "ข้าวกะเพราหมู", 
+    "price" : 40.0, 
+    "branch" : "Python"
+}
+{ 
+    "_id" : ObjectId("604ed37b889d9582e9442055"), 
+    "date" : ISODate("2021-03-15T10:24:42.955+0000"), 
+    "food_item" : ObjectId("60141d189320b3b12510a707"), 
+    "food_name" : "ข้าวปลาผัดพริกสด", 
+    "price" : 45.0, 
+    "branch" : "Python"
+}
