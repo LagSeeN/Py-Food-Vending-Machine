@@ -75,7 +75,7 @@ def food_finish(_id, current_food):
         db['products'].update({'_id': _id}, {'$set': {'stock': current_food - 1}})
         db['transaction'].insert_one(
             {'date': datetime.now(), 'food_item': _id, 'food_name': db['products'].find_one(where)['product_name'],
-             'price': db['products'].find_one(where)['price'],'branch': branch})
+             'price': db['products'].find_one(where)['price'], 'branch': branch})
 
 
 def export_log():
@@ -85,11 +85,14 @@ def export_log():
         df = pd.DataFrame(list(cursor))
     current_date = df['date'].dt.month
     df['Month'] = current_date
-    df_export = df[df['Month'] == 2].groupby(['food_name'])[['food_name', 'price']].agg(
-        {'food_name': ['count'], 'price': ['sum']}).sort_values(by=[('food_name', 'count'), ('price', 'sum')],
-                                                                ascending=[0, 1])
-    filename = 'Food Vending Machine ' + str(datetime.now().year) + '-' + str(datetime.now().month)
-    write_excel = pd.ExcelWriter(desktop + filename + '.xlsx')
-    sheet_name = filename
-    df_export.to_excel(write_excel, sheet_name, encoding='utf8')
-    write_excel.save()
+    try:
+        df_export = df[df['Month'] == datetime.now().month].groupby(['food_name'])[['food_name', 'price']].agg(
+            {'food_name': ['count'], 'price': ['sum']}).sort_values(by=[('food_name', 'count'), ('price', 'sum')],
+                                                                    ascending=[0, 1])
+        filename = 'Food Vending Machine ' + str(datetime.now().year) + '-' + str(datetime.now().month)
+        write_excel = pd.ExcelWriter(desktop + filename + '.xlsx')
+        sheet_name = filename
+        df_export.to_excel(write_excel, sheet_name, encoding='utf8')
+        write_excel.save()
+    except Exception as err:
+        print(err)
