@@ -8,7 +8,7 @@
 
 [Python](https://www.python.org/)
 
-[Mongodb](https://www.mongodb.com/)
+[MongoDB](https://www.mongodb.com/)
 
 ## Installation
 ```bash
