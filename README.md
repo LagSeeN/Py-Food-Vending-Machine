@@ -10,6 +10,8 @@
 
 [MongoDB](https://www.mongodb.com/)
 
+[PyQt5](https://pypi.org/project/PyQt5/)
+
 ## Installation
 ```bash
 1. git clone https://github.com/LagSeeN/Py-Food-Vending-Machine.git
